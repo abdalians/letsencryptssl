@@ -4,4 +4,5 @@
       synchronize:
         src: /etc/letsencrypt
         dest: rsync://can-mtl-pbx01.cloudserv.binarium.ca/etc/letsencrypt
+        dest_port: 9022
         mode: push
