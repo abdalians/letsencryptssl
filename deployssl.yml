@@ -2,7 +2,6 @@
   tasks:
     - name: Transfer SSL Certs
       synchronize:
-        dest_port: 9022
         src: /etc/letsencrypt
         dest: rsync://can-mtl-pbx01.cloudserv.binarium.ca/etc/letsencrypt
         mode: push
