@@ -1,4 +1,5 @@
-- hosts: master02.ovh.binarium.ca
+- hosts: SSLCertHosts
   tasks:
     - name: Transfer SSL Certs
-      command: bash /usr/local/bin/copySSL.sh
+#      command: bash /usr/local/bin/copySSL.sh
+      command:  /usr/bin/rsync -arvz --port=9022 --archive  www4.binarium.ca:/etc/letsencrypt /etc/
