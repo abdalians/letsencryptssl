@@ -5,3 +5,4 @@
         src: /etc/letsencrypt
         dest: can-mtl-pbx01.cloudserv.binarium.ca:/etc/
         mode: push
+        delegate_to: master02.ovh.binarium.ca
