@@ -1,1 +1,8 @@
-
+- hosts: can-mtl-pbx01.cloudserv.binarium.ca
+  tasks:
+    - name: Transfer SSL Certs
+      synchronize:
+        src: /etc/letsencrypt
+        dest: /etc/letsencrypt
+        mode: push
+      delegate_to: master02.ovh.binarium.ca
