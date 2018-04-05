@@ -2,4 +2,4 @@
   tasks:
     - name: Transfer SSL Certs
 #      command: bash /usr/local/bin/copySSL.sh
-      command:  /usr/bin/rsync -arvz --port=9022 --archive  www4.binarium.ca:/etc/letsencrypt /etc/
+      command:  /usr/bin/rsync -e "ssh -p 9022" -arvvvvz  www4.binarium.ca:/etc/letsencrypt /etc/
