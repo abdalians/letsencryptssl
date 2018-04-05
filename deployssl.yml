@@ -3,6 +3,5 @@
     - name: Transfer SSL Certs
       synchronize:
         src: /etc/letsencrypt
-        dest: /etc/letsencrypt
+        dest: rsync:can-mtl-pbx01.cloudserv.binarium.ca/etc/letsencrypt
         mode: push
-      delegate_to: can-mtl-pbx01.cloudserv.binarium.ca
