@@ -1,4 +1,4 @@
 - hosts: master02.ovh.binarium.ca
   tasks:
     - name: Transfer SSL Certs
-        shell: /usr/local/bin/copySSL.sh >> /var/log/copySSL.log
+      shell: /usr/local/bin/copySSL.sh >> /var/log/copySSL.log
